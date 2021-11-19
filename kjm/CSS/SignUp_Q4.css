@@ -1,0 +1,54 @@
+logo {
+    width: 100%;
+    height: 150px;  
+}
+
+.logo_text {
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    font-size: 50px;
+    font-weight: bold;
+    color: #0072B1;
+}
+
+.question_section {
+    background-color: #9DA0AA;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.q_text {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.buttons {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+[class^=btn] {
+    font-size: 35px;
+    float: none;
+    margin: 20px auto;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f0e442;
+    border: none;
+}
+
+[class^=btn]:hover {
+    background-color: #56b4e9;
+    border: 3px solid black;
+}
+
+[class^=btn]:active {
+    background-color: #0072b2;
+    border: 2px solid black;//
+}
