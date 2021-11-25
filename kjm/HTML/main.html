@@ -1,0 +1,89 @@
+<!-- 
+    [ 메인 홈페이지 ]
+
+    작성자 : 김정민
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Googlasses</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/9ccd3a1272.js" 
+    crossorigin="anonymous"
+    ></script>
+    <script src="../JS/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 로고 -->
+        <div class="logo">
+            <a href="./main.html">
+                <p class="logo_btn">Googlasses</p>
+            </a>
+        </div>
+
+        <!-- 네비게이션 바 -->
+        <nav class="navbar">
+            <div class="navbar_menu">
+                <li><a href="#" class="nav_menu1">뉴스</a></li>
+                <li><a href="#" class="nav_menu2">날씨</a></li>
+                <li><a href="#" class="nav_menu3">쇼핑</a></li>
+                <li><a href="#" class="nav_menu4">YouTube</a></li>
+                <li><a href="#" class="nav_menu5">기타</a></li>
+            </div>
+            <ul class="navbar_icons">
+                <li><a href="#"><i class="fas fa-plus fa-lg"></i></a></li>
+                <li><a href="#"><i class="fas fa-edit fa-lg"></i></a></li>
+            </ul>
+            <a href="#" class="navbar_toggleBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+
+        <!-- 검색창 -->
+        <div class="search_box">
+            <input type="text" class="search_txt" name="" placeholder="Search">
+            <a href="#" class="search_btn" type="submit">
+                <i class="fas fa-search fa-lg"></i>
+            </a>
+        </div>
+
+        <!-- 콘텐츠 부분 -->
+        <section>
+            <div class="contents_box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="../IMG/cats1.jpg" alt="cats1" class="slide1"></div>
+                      <div class="swiper-slide"><img src="../IMG/cats2.jpg" alt="cats2" class="slide2"></div>
+                      <div class="swiper-slide"><img src="../IMG/tango.jpg" alt="tango" class="slide3"></div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- footer 부분 -->
+        <footer>
+            <nav>
+                <a href="https://github.com/j-miiin/Googlasses" target="_blank" style="color: #848484;">GitHub</a>
+            </nav>
+            <p>
+                <span>저자 : Googlasses</span><br>
+                <span>Copyright 2021. Googlasses. All Rights Reserved.</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
