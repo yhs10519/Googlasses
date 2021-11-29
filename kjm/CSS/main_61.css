@@ -438,8 +438,7 @@ table {
 .card-header1,
 .card-header2,
 .card-header3,
-.card-header4,
-.card-header5 {
+.card-header4 {
     -webkit-transition: 0.5s; /*사파리 & 크롬*/
     -moz-transition: 0.5s; /*파이어폭스*/
     -ms-transition: 0.5s; /*인터넷 익스플로러*/
@@ -453,34 +452,30 @@ table {
 }
 
 .card-header1 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/11/SSI_20211111141844_O2.jpg");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124110329_O2.jpg");
 }
 
 .card-header2 {
-    background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2021/11/27/110484148.4.jpg");
+    background-image: url("https://img.etoday.co.kr/pto_db/2021/11/600/20211124133709_1690055_1200_900.jpg");
 }
 
 .card-header3 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/22/SSI_20211122224902_O2.jpg");
+    background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2021/11/25/110464628.1.jpg");
 }
 
 .card-header4 {
-    background-image: url("http://www.veritas-a.com/news/photo/202111/398726_301737_3433.jpg");
-}
-
-.card-header5 {
-	background-image: url("http://res.heraldm.com/phpwas/restmb_idxmake.php?idx=999&simg=%2Fcontent%2Fimage%2F2021%2F11%2F27%2F20211127000018_0.jpg");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124162201_O2.jpg");
 }
 
 .card:hover .card-header1,
 .card:hover .card-header2,
 .card:hover .card-header3,
-.card:hover .card-header4,
-.card:hover .card-header5
+.card:hover .card-header4
  {
     opacity: 0.8;
     height: 0px;
 }
+
 
 h1 {
     font-size: 22px;
@@ -524,11 +519,12 @@ h1 {
 }
 
 .card-body-footer {
+    display: flex;
     position: absolute;
     margin-top: 15px;
     margin-bottom: 6px;
     bottom: 0;
-    width: 200px;
+    width: 100%;
     font-size: 14px;
     color: #9FA5A8;
     padding: 0 15px;
