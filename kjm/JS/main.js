@@ -65,6 +65,19 @@ let date = today.getDate();
 let todoDate = year + '년 ' + month + '월 ' + date + '일';
 document.querySelector('.todoDay').innerHTML = todoDate;
 
+// 네비게이션 바 단축키 팝업창
+
+function showPopup(num) {
+	const popup = document.querySelector('#popup'+num);
+  
+    popup.classList.remove('hide');
+}
+
+function closePopup(num) {
+	const popup = document.querySelector('#popup'+num);
+    popup.classList.add('hide');
+}
+
 // 뉴스 콘텐츠 스와이퍼
 const swiper = new Swiper('.swiper-container', {
     loop: false,
