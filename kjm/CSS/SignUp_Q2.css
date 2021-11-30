@@ -1,7 +1,9 @@
 /* 
-    [ 회원가입 페이지 - 연령대 질문 ]
+    [ 회원가입 페이지 - 색각이상 여부 질문 ]
 
-    작성자 : 김정민
+    작성자 : 양형식
+
+    수정 : 김정민
 */
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
@@ -41,8 +43,8 @@ a {
 
 .q_text {
     font-size: 25px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     font-weight: bold;
     color: #404040;
