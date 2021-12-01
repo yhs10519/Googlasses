@@ -6,6 +6,22 @@
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
+html {
+    --title-color: #9b4747;
+}
+
+html[data-theme="dark"] {
+    --bg-color: black;
+    --color: rgb(242, 221, 104);
+    --title-color: rgb(242, 221, 104);
+}
+  
+html[data-theme="light"] {
+    --bg-color: beige;
+    --color: #9b4747;
+    --title-color: #9b4747;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -37,6 +53,11 @@ a {
     color: #9b4747;
     font-size: 25px;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+#darkmode_toggle {
+    display: none;
 }
 
 .logo {
@@ -51,7 +72,7 @@ a {
     box-sizing: border-box;
     font-size: 50px;
     font-weight: bold;
-    color: #9b4747;
+    color: var(--title-color);
 }
 
 .navbar {
@@ -138,36 +159,36 @@ a {
     z-index: 1;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-  }
+}
 
-  #popup1.hide,
-  #popup2.hide,
-  #popup3.hide {
-    display: none;
-  }
+#popup1.hide,
+#popup2.hide,
+#popup3.hide {
+display: none;
+}
   
-  #popup1 .content,
-  #popup2 .content,
-  #popup3 .content {
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  }
+#popup1 .content,
+#popup2 .content,
+#popup3 .content {
+padding: 20px;
+background: #fff;
+border-radius: 5px;
+box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+}
 
-  .popupCloseBtn {
-      margin-left: 95%;
-      background: none;
-      border: none;
-      font-size: 26px;
-      color: #9b4747;
-      cursor: pointer;
-  }
+.popupCloseBtn {
+    margin-left: 95%;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #9b4747;
+    cursor: pointer;
+}
 
-  .mapTitle {
-      color: #9b4747;
-      font-weight: bold;
-  }
+.mapTitle {
+    color: #9b4747;
+    font-weight: bold;
+}
 
 .search_box {
     position: absolute;
@@ -452,6 +473,11 @@ section {
     border: none;
 }
 
+.tempdiv .swiper-button-prev,
+.tempdiv .swiper-button-next {
+    z-index: 0;
+}
+
 #wrap {
     min-height: 100vh;
     position: relative;
@@ -499,8 +525,7 @@ table {
 .shopping-card-header1,
 .shopping-card-header2,
 .shopping-card-header3,
-.shopping-card-header4,
-.shopping-card-header5 {
+.shopping-card-header4 {
     -webkit-transition: 0.5s; /*사파리 & 크롬*/
     -moz-transition: 0.5s; /*파이어폭스*/
     -ms-transition: 0.5s; /*인터넷 익스플로러*/
@@ -534,7 +559,7 @@ table {
 }
 
 .shopping-card-header1{
-    background-image: url("https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/184289866617096-a9b07746-3aa2-4ad3-b70e-c8fef3e7d679.jpg")
+    background-image: url("https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2032072526910703-bd731166-af02-4d8e-8cc8-f139226054ee.jpg")
 }
 
 .shopping-card-header2{
@@ -542,15 +567,11 @@ table {
 }
 
 .shopping-card-header3{
-    background-image: url("https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/5625483147937349-72dab621-d11d-40e6-b347-b40dc9a67230.jpg")
+    background-image: url("https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/51ca/5c66b98521fee965267fc0aad7e974bd68c50680fd73bb7b544fe03e4f3e.jpg")
 }
 
 .shopping-card-header4{
-    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/121943323333314-62b434a2-8043-45c0-9cf6-01a0a84a6b40.jpg")
-}
-
-.shopping-card-header5{
-    background-image: url("https://www.hstore.co.kr/shopimages/hstore1/mobile/9/359_represent?1564053363")
+    background-image: url("https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/cf68/cf897325d29d575cf2f80f7b5a63bad0bc26bb1fb6bac58fcbd6bcfa1c0b.jpg")
 }
 
 .card:hover .card-header1,
@@ -561,8 +582,7 @@ table {
 .card.card:hover .shopping-card-header1,
 .card.card:hover .shopping-card-header2,
 .card.card:hover .shopping-card-header3,
-.card.card:hover .shopping-card-header4,
-.card.card:hover .shopping-card-header5
+.card.card:hover .shopping-card-header4
  {
     opacity: 0.8;
     height: 0px;

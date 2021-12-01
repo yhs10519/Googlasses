@@ -100,3 +100,16 @@ const swiper = new Swiper('.swiper-container', {
         clickable: true,
     },
   });
+
+const $darkmodeToggle = document.querySelector('#darkmode_toggle');
+
+$darkmodeToggle.addEventListener('change', ({target}) => {
+  document.documentElement.dataset.theme = (target.checked) ? 'dark' : 'light'
+  if (target.checked) {
+    let darkmodeIcon = "<i class='fas fa-moon'></i>"
+    document.querySelector('.darkmodeBtn').innerHTML = darkmodeIcon;
+  } else {
+    let darkmodeIcon = "<i class='far fa-moon'></i>"
+    document.querySelector('.darkmodeBtn').innerHTML = darkmodeIcon;
+  }
+})

@@ -69,12 +69,21 @@ a {
 }
 
 .navbar_menu li {
-    padding:  8px 50px;
+    padding:  8px 40px;
     position: relative;
     font-size: 18px;
 }
 
-.navbar_menu li a::after {
+.navbar_menu button {
+    font-size: 18px;
+    color: #f6e8db;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar_menu li a::after,
+.navbar_menu li button::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -86,7 +95,8 @@ a {
     transition: all .3s ease-out;
 }
 
-.navbar_menu li a:hover::after {
+.navbar_menu li a:hover::after,
+.navbar_menu li button:hover::after {
     width: 100%;
 }
 
@@ -111,6 +121,52 @@ a {
     color: #f6e8db;
     padding-top: 5px;
 }
+
+#popup1,
+#popup2,
+#popup3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  #popup1.hide,
+  #popup2.hide,
+  #popup3.hide {
+    display: none;
+  }
+  
+  #popup1 .content,
+  #popup2 .content,
+  #popup3 .content {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  }
+
+  .popupCloseBtn {
+      margin-left: 95%;
+      background: none;
+      border: none;
+      font-size: 26px;
+      color: #9b4747;
+      cursor: pointer;
+  }
+
+  .mapTitle {
+      color: #9b4747;
+      font-weight: bold;
+  }
 
 .search_box {
     position: absolute;
@@ -395,6 +451,11 @@ section {
     border: none;
 }
 
+.tempdiv .swiper-button-prev,
+.tempdiv .swiper-button-next {
+    z-index: 0;
+}
+
 #wrap {
     min-height: 100vh;
     position: relative;
@@ -437,7 +498,11 @@ table {
 .card-header1,
 .card-header2,
 .card-header3,
-.card-header4 {
+.card-header4,
+.shopping-card-header1,
+.shopping-card-header2,
+.shopping-card-header3,
+.shopping-card-header4 {
     -webkit-transition: 0.5s; /*사파리 & 크롬*/
     -moz-transition: 0.5s; /*파이어폭스*/
     -ms-transition: 0.5s; /*인터넷 익스플로러*/
@@ -466,10 +531,30 @@ table {
     background-image: url("https://image.newsis.com/2021/11/24/NISI20211124_0018188713_web.jpg?rnd=20211124164143");
 }
 
+.shopping-card-header1{
+    background-image: url("https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/4768920761782797-10271d33-68a2-445c-81b3-9b573b395a7e.jpg")
+}
+
+.shopping-card-header2{
+    background-image: url("https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2019/11/21/12/8/87ebd5a0-ed61-4787-b2fd-a05af1ba98eb.jpg")
+}
+
+.shopping-card-header3{
+    background-image: url("https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/0d59/406adf72325954243aba439a39d1be96d119560a07453f01926bf4ea1e72.jpg")
+}
+
+.shopping-card-header4{
+    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/121943323333314-62b434a2-8043-45c0-9cf6-01a0a84a6b40.jpg")
+}
+
 .card:hover .card-header1,
 .card:hover .card-header2,
 .card:hover .card-header3,
-.card:hover .card-header4
+.card:hover .card-header4,
+.card.card:hover .shopping-card-header1,
+.card.card:hover .shopping-card-header2,
+.card.card:hover .shopping-card-header3,
+.card.card:hover .shopping-card-header4
  {
     opacity: 0.8;
     height: 0px;

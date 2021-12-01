@@ -26,6 +26,7 @@ a {
 }
 
 .logInTxt {
+    font-size: 25px;
     float: right;
     margin-right: 30px;
     color: #404040;
@@ -34,7 +35,7 @@ a {
 .darkmodeBtn {
     float: left;
     color: #9b4747;
-    font-size: 25px;
+    font-size: 35px;
     margin-left: 30px;
 }
 
@@ -48,7 +49,7 @@ a {
 .logo_btn {
     text-align: center;
     box-sizing: border-box;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     color: #9b4747;
 }
@@ -59,7 +60,7 @@ a {
     align-items: center;
     background-color: #9b4747;
     padding: 8px 12px;
-    height: 50px;
+    height: 60px;
 }
 
 .navbar_menu {
@@ -69,13 +70,13 @@ a {
 }
 
 .navbar_menu li {
-    padding:  8px 40px;
+    padding:  8px 30px;
     position: relative;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .navbar_menu button {
-    font-size: 18px;
+    font-size: 28px;
     color: #f6e8db;
     background: none;
     border: none;
@@ -106,6 +107,7 @@ a {
     display: flex;
     padding-left: 0;
     margin-top: 18px;
+    font-size: 20px;
 }
 
 .navbar_icons li {
@@ -117,7 +119,7 @@ a {
     display: none;
     position: absolute;
     right: 32px;
-    font-size: 24px;
+    font-size: 34px;
     color: #f6e8db;
     padding-top: 5px;
 }
@@ -158,7 +160,7 @@ a {
       margin-left: 95%;
       background: none;
       border: none;
-      font-size: 26px;
+      font-size: 36px;
       color: #9b4747;
       cursor: pointer;
   }
@@ -166,6 +168,7 @@ a {
   .mapTitle {
       color: #9b4747;
       font-weight: bold;
+      font-size: 30px;
   }
 
 .search_box {
@@ -192,7 +195,7 @@ a {
     float: left;
     padding: 0;
     color: #404040;
-    font-size: 16px;
+    font-size: 26px;
     transition: 0.4s;
     line-height: 40px;
     width: 400px;
@@ -220,8 +223,8 @@ input[id="menuicon"] {
 
 input[id="menuicon"] + label {
     display: block;
-    width: 40px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     position: fixed;
     left: 0;
     top: calc(50% - 25px);
@@ -232,7 +235,7 @@ input[id="menuicon"] + label {
 input[id="menuicon"] + label span {
     display: block;
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 5px;
     border-radius: 30px;
     background: #9b4747;
@@ -304,12 +307,12 @@ input[id="menuicon"]:checked + label {
 }
 
 .todoDay {
-    font-size: 12px;
+    font-size: 18px;
     text-align: left;
 }
 
 .todoTitle {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: #f6e8db;
 }
@@ -352,7 +355,7 @@ form {
     color: #f6e8db;
     transition: 0.3s;
     margin-left: 20px;
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
@@ -368,12 +371,12 @@ form {
 .todoInputBtn {
     background: #f6e8db;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-left: 15px;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 25px;
     color: #9b4747;
     border-radius: 40px;
     border: none;
@@ -386,7 +389,7 @@ form {
     top: 3px;
     align-items: center;
     justify-content: center;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 section {
@@ -483,7 +486,7 @@ table {
 
 /*css 초기화*/
 .card {
-    height: 300px;
+    height: 450px;
     width: 100%;
     border-radius: 15px;
     display: inline-block;
@@ -516,35 +519,35 @@ table {
 }
 
 .card-header1 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/22/SSI_20211122164136_O2.jpg");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124110329_O2.jpg");
 }
 
 .card-header2 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/23/SSI_20211123121833_O2.jpg");
+    background-image: url("https://img.etoday.co.kr/pto_db/2021/11/600/20211124133709_1690055_1200_900.jpg");
 }
 
 .card-header3 {
-    background-image: url("https://newsimg-hams.hankookilbo.com/2021/11/24/0bb98cc7-e330-4f8e-971d-bc1556a6744e.jpg");
+    background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2021/11/25/110464628.1.jpg");
 }
 
 .card-header4 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/25/SSI_20211125102741_O2.jpg");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124162201_O2.jpg");
 }
 
 .shopping-card-header1{
-    background-image: url("https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/184289866617096-a9b07746-3aa2-4ad3-b70e-c8fef3e7d679.jpg")
+    background-image: url("https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/aac9/a866638408552dd3c0569b1ebbd9b44c394d4c62a46bd3859cdc4af533de.jpg")
 }
 
 .shopping-card-header2{
-    background-image: url("https://www.nintendo.co.kr/switch/modal/img/lineup/img-package--blueRed-new.png")
+    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/03b7/3a96336452baaf291a4f331c9709ae264c648b45661282c0a1443c69524b.jpg")
 }
 
 .shopping-card-header3{
-    background-image: url("https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/5625483147937349-72dab621-d11d-40e6-b347-b40dc9a67230.jpg")
+    background-image: url("https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/0d59/406adf72325954243aba439a39d1be96d119560a07453f01926bf4ea1e72.jpg")
 }
 
 .shopping-card-header4{
-    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/121943323333314-62b434a2-8043-45c0-9cf6-01a0a84a6b40.jpg")
+    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/699c/094cac2fe9ccbba8fd02b7537e59c5af1d4c88aac66c1842e68ec3304577.jpg")
 }
 
 .card:hover .card-header1,
@@ -560,34 +563,36 @@ table {
     height: 0px;
 }
 
+
 h1 {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bold;
     color: black;
 }
 
 
 .card-body-header {
-    line-height: 25px;
+    line-height: 30px;
     margin: 10px 20px 0px 20px;
 }
 
 .card-body-hashtag {
     color: #9b4747;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .card-body-description {
+    font-size: 25px;
     opacity: 0;
     color: #757B82;
-    line-height: 25px;
+    line-height: 28px;
     -webkit-transition: .2s ease-in-out; /*사파리&크롬*/
     -moz-transition: .2s ease-in-out; /*파이어폭스*/
     -ms-transition: .2s ease-in-out; /*익스플로러*/
     -o-transition: .2s ease-in-out; /*오페라*/
     transition: .2s ease-in-out;
     overflow: hidden;
-    height: 180px;
+    height: 240px;
     margin: 5px 20px;
 }
 

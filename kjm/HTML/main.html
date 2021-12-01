@@ -1,7 +1,12 @@
 <!-- 
     [ 메인 홈페이지 ]
+
     작성자 : 김정민
-    한글 카드뉴스 콘텐츠 추가 : 김현재, 양현식
+
+    한글 카드뉴스 콘텐츠(뉴스, 쇼핑, 유투브) 추가 : 김현재, 양현식
+
+    한글 카드뉴스 콘텐츠(날씨) 추가 : 김정민
+
     영어 카드뉴스 콘텐츠 추가 : 루스탐
  -->
 
@@ -78,9 +83,10 @@
      <!-- 헤더 (다크모드, 로그인) -->
      <header class="header">
          <a href="./SignIn.html" class="logInTxt" target="_self">LogIn</a>
-         <a href="#" class="darkmodeBtn">
-             <i class="far fa-moon"></i>
-         </a>
+         <input type="checkbox" id="darkmode_toggle" />
+         <label for="darkmode_toggle" class="darkmodeBtn">
+            <i class="far fa-moon"></i>
+         </label>
          <!-- 로고 -->
          <div class="logo">
              <p><a href="./main.html" class="logo_btn">Googlasses</a></p>
@@ -122,7 +128,7 @@
             <div class="content">
                 <button class="popupCloseBtn" onclick="closePopup(2)"><i class="fas fa-times"></i></button>
                 <div>
-                        <h2 class="mapTitle">구글맵에서 '상명대학교' 검색</h2>
+                        <h2 class="mapTitle">지도에서 '상명대학교' 검색</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.9796489231526!2d126.9530579506139!3d37.602637979692005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b2919c82801fb%3A0x8da4671836a7efc8!2z7IOB66qF64yA7ZWZ6rWQIOyEnOyauOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1638295301109!5m2!1sko!2skr" 
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">상명대학교 구글맵</iframe>
                 </div>
@@ -345,7 +351,7 @@
                                      </div>
                                  </a>
                              </div>
-                         </div>
+                            </div> 
                              <div class="swiper-pagination"></div>
                  
                              <div class="swiper-scrollbar"></div>
@@ -367,7 +373,7 @@
                             <div class="swiper-wrapper">
                                 <!-- 카드뉴스 1 -->
                                 <div class="swiper-slide">
-                                    <a href="https://www.coupang.com/vp/products/4782488155?itemId=6117330609&vendorItemId=73413724264&q=%EB%B2%84%EC%A6%88&itemsCount=36&searchId=7d3e110c028140908d82bdfa8f3c9c23&rank=0&isAddedCart="
+                                    <a href="https://www.coupang.com/vp/products/6091199372?itemId=11356856874&vendorItemId=78633225201&q=%EC%95%84%EC%9D%B4%ED%8F%B0&itemsCount=36&searchId=735d88968e074092850c66d7ac704735&rank=0"
                                         target="_blank">
                                         <!-- 클릭 시 링크 설정 -->
                                         <div class="card">
@@ -378,15 +384,14 @@
                                             <div class="card-body">
                                                 <!--  카드 바디 헤더 -->
                                                 <div class="card-body-header">
-                                                    <h1 class="cardnews_title">삼성전자 갤럭시 버즈 프로</h1>
-                                                    <p class="card-body-hashtag">#삼성 #무선 이어폰 #가격 : 154,300원 </p>
+                                                    <h1 class="cardnews_title">아이폰 13</h1>
+                                                    <p class="card-body-hashtag">#애플 #스마트폰 #가격 : 1,193,100원</p>
                                                 </div>
                                                 <p class="card-body-description">
-                                                    유닛형태: 커널형<br>
-                                                    무선충전 여부: 가능<br>
-                                                    최대시간: 5시간<br>
-                                                    형태: 독립형<br>
-                                                    유무선 여부: 무선<br>
+                                                    가전 모델: iPhone 13<br>
+                                                    화면크기: 6.1<br>
+                                                    저장용량: 256GB<br>
+                                                    무게: 332g<br>
                                                     <br><br> 쇼핑 하러 가기 <br><br><br><br>
                                                 </p>
                                                 <!--  카드 바디 본문 -->
@@ -437,7 +442,7 @@
                                 </div>
                                 <!-- 카드뉴스 3 -->
                                 <div class="swiper-slide">
-                                    <a href="https://www.coupang.com/vp/products/5716225504?itemId=9546302005&vendorItemId=76830989093&pickType=COU_PICK&q=%EC%86%8C%ED%8C%8C&itemsCount=36&searchId=bc1aba1ab3a64ae6a2b4a4fbf8f46769&rank=2"
+                                    <a href="https://www.coupang.com/vp/products/6213456981?itemId=12396793504&vendorItemId=79666362214&q=10%EB%8C%80&itemsCount=36&searchId=48fd34bb47964496b5e53ad56a06fab3&rank=52"
                                         target="_blank">
                                         <!-- 클릭 시 링크 설정 -->
                                         <div class="card">
@@ -448,15 +453,14 @@
                                             <div class="card-body">
                                                 <!--  카드 바디 헤더 -->
                                                 <div class="card-body-header">
-                                                    <h1 class="cardnews_title">스칸디나 패브릭 쇼파 3인용 팔걸이 좌형 + 쿠션 + 스툴</h1>
-                                                    <p class="card-body-hashtag">#샤바스 #쇼파 #가격:329,000원</p>
+                                                    <h1 class="cardnews_title">베이직 캐주얼 백팩 대학생 여행 패션 아이보리 가방</h1>
+                                                    <p class="card-body-hashtag">#블루316 #가방 #가격:33,190원</p>
                                                 </div>
                                                 <p class="card-body-description">
-                                                    설치지원방식: 방문설치<br>
-                                                    사이즈: 쇼파(1700 x 800 x 740 mm), 스툴(650 x 800 x 380 mm)<br>
-                                                    가로길이: 1700mm<br>
-                                                    사용인원: 3인용<br>
-                                                    스툴 유무: 스툴 있음<br>
+                                                    소재: POLY<br>
+                                                    사이즈: 가로32x 세로45x두께13cm<br>
+                                                    무게: 430G
+                                                    색상: 아이보리, 블랙
                                                     <br><br> 쇼핑 하러 가기 <br><br><br><br>
                                                 </p>
                                                 <!--  카드 바디 본문 -->
@@ -471,7 +475,7 @@
                                 </div>
                                 <!-- 카드뉴스 4 -->
                                 <div class="swiper-slide">
-                                    <a href="https://www.coupang.com/vp/products/6058199478?itemId=11129005098&vendorItemId=78407618743&q=%EA%B0%A4%EB%9F%AD%EC%8B%9C+%EC%9B%8C%EC%B9%984&itemsCount=36&searchId=0f327f2218fd41f9ae095764b38d2aa8&rank=1"
+                                    <a href="https://www.coupang.com/vp/products/6029383225?itemId=10990382174&vendorItemId=78664993150&sourceType=srp_product_ads&clickEventId=e800c15f-8208-4d9a-9d9e-5ac50c6d3f29&korePlacement=15&koreSubPlacement=1&clickEventId=e800c15f-8208-4d9a-9d9e-5ac50c6d3f29&korePlacement=15&koreSubPlacement=1&q=%EB%B0%9C%EB%A0%8C%EC%8B%9C%EC%95%84%EA%B0%80&itemsCount=36&searchId=542cb1bec0d44f9a81ec81fa7d3a6e4f&rank=0"
                                         target="_blank">
                                         <!-- 클릭 시 링크 설정 -->
                                         <div class="card">
@@ -482,15 +486,17 @@
                                             <div class="card-body">
                                                 <!--  카드 바디 헤더 -->
                                                 <div class="card-body-header">
-                                                    <h1 class="cardnews_title"> 삼성전자 갤럭시 워치 4 40mm</h1>
-                                                    <p class="card-body-hashtag">#삼성 #웨어러블기기 #가격: 231,220</p>
+                                                    <h1 class="cardnews_title">21SS 스피드러너 블랙 핑크 스니커즈 587280 W2DBB 1586 5
+                                                    </h1>
+                                                    <p class="card-body-hashtag">#발렌시아가 #의류 #가격: 896,740원</p>
                                                 </div>
                                                 <p class="card-body-description">
-                                                    심전도측정 기능: 심전도측정 가능<br>
-                                                    혈중산소측정 기능: 혈중산소측정 가능<br>
-                                                    혈압측정 기능: 혈압측정 가능<br>
-                                                    스마트워치 연결성: GPS<br>
-                                                    화면크기: 40mm<br>
+                                                    원산지(Origin) : ITALY<br>
+                                                    소재(Material) : Neoprene 100%<br>
+                                                    수입방식: 병행수입<br>
+                                                    색상계열: 블랙계열<br>
+                                                    사용계절: 사계절용<br>
+                                                    배송(Delivery) : 국내 당일발송<br>
                                                     <br><br> 쇼핑 하러 가기 <br><br><br><br>
                                                 </p>
                                                 <!--  카드 바디 본문 -->
@@ -503,40 +509,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <!-- 카드뉴스 5 -->
-                                <div class="swiper-slide">
-                                    <a href="https://www.coupang.com/vp/products/4891857022?itemId=3414080331&vendorItemId=71946352733&q=%EC%A0%95%EA%B4%80%EC%9E%A5+%ED%99%8D%EC%82%BC+%EC%97%90%EB%B8%8C%EB%A6%AC%ED%83%80%EC%9E%84&itemsCount=36&searchId=96afde133625496998020283ceba4d84&rank=1"
-                                        target="_blank">
-                                        <!-- 클릭 시 링크 설정 -->
-                                        <div class="card">
-                                            <!-- 카드 헤더 -->
-                                            <div class="shopping-card-header5">
-                                            </div>
-                                            <!--  카드 바디 -->
-                                            <div class="card-body">
-                                                <!--  카드 바디 헤더 -->
-                                                <div class="card-body-header">
-                                                    <h1 class="cardnews_title">정관장 홍삼정 에브리타임밸런스10mlx60입</h1>
-                                                    <p class="card-body-hashtag">#정관장 #건강 식품 #가격: 114,500원 </p>
-                                                </div>
-                                                <p class="card-body-description">
-                                                    제조원: (주) 한국인삼공사<br>
-                                                    품질유지기한: 제조년월일부터 2년<br>
-                                                    홍삼농축액 21%<br>
-                                                    개당 중량: 10ml<br>
-                                                    총 중량: 300ml<br>
-                                                    <br><br> 쇼핑 하러 가기 <br><br><br><br>
-                                                </p>
-                                                <!--  카드 바디 본문 -->
-                                                <!--  카드 바디 푸터 -->
-                                                <div class="card-body-footer">
-                                                    <i class="omments_count"></i>댓글 0개
-                                                    <i class="reg_date"> 21.11.27 09:18 </i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
+
                             </div>
                             <div class="swiper-pagination"></div>
 
