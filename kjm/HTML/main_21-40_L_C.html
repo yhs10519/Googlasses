@@ -1,5 +1,5 @@
 <!-- 
-    [ 메인 홈페이지 ] - 큰 글씨 버전
+    [ 메인 홈페이지 ] - 큰 글씨, 색상 변형 버전
 
     작성자 : 김정민
 
@@ -13,7 +13,7 @@
  <head>
      <meta charset="UTF-8">
      <title>Googlasses</title>
-     <link rel="stylesheet" href="../CSS/main_21-40_L.css">
+     <link rel="stylesheet" href="../CSS/main_21-40_L_C.css">
      <script src="https://kit.fontawesome.com/9ccd3a1272.js" 
      crossorigin="anonymous"
      ></script>
@@ -23,69 +23,69 @@
      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
      <style>
         html {
-            --red-yellow-change: #9b4747;
+            --black-yellow-change: black;
         }
 
         html[data-theme="dark"] {
-            --red-yellow-change: #F2DD68;
+            --black-yellow-change: #f0e442;
         }
   
         html[data-theme="light"] {
-            --red-yellow-change: #9b4747;
+            --black-yellow-change: black;
         }
 
         :root {
-             --swiper-theme-color: var(--red-yellow-change);
+             --swiper-theme-color: var(--black-yellow-change);
         }
      </style>
  
- <script>
-    $(function() {
-        $('.nav_menu1').click(function() {
-            if($(".newsContents").css("display") == "none") {
-                $(".newsContents").slideDown();
-                $(".weatherContents").slideUp();
-                $(".shoppingContents").slideUp();
-                $(".YouTubeContents").slideUp();
-            } else {
-                $(".newsContents").slideUp();
-            }
-        })
+    <script>
+        $(function() {
+            $('.nav_menu1').click(function() {
+                if($(".newsContents").css("display") == "none") {
+                    $(".newsContents").slideDown();
+                    $(".weatherContents").slideUp();
+                    $(".shoppingContents").slideUp();
+                    $(".YouTubeContents").slideUp();
+                } else {
+                    $(".newsContents").slideUp();
+                }
+            })
 
-        $('.nav_menu2').click(function() {
-            if($(".weatherContents").css("display") == "none") {
-                $(".weatherContents").slideDown();
-                $(".newsContents").slideUp();
-                $(".shoppingContents").slideUp();
-                $(".YouTubeContents").slideUp();
-            } else {
-                $(".weatherContents").slideUp();
-            }
-        })
+            $('.nav_menu2').click(function() {
+                if($(".weatherContents").css("display") == "none") {
+                    $(".weatherContents").slideDown();
+                    $(".newsContents").slideUp();
+                    $(".shoppingContents").slideUp();
+                    $(".YouTubeContents").slideUp();
+                } else {
+                    $(".weatherContents").slideUp();
+                }
+            })
 
-        $('.nav_menu3').click(function() {
-            if($(".shoppingContents").css("display") == "none") {
-                $(".shoppingContents").slideDown();
-                $(".newsContents").slideUp();
-                $(".weatherContents").slideUp();
-                $(".YouTubeContents").slideUp();
-            } else {
-                $(".shoppingContents").slideUp();
-            }
-        })
+            $('.nav_menu3').click(function() {
+                if($(".shoppingContents").css("display") == "none") {
+                    $(".shoppingContents").slideDown();
+                    $(".newsContents").slideUp();
+                    $(".weatherContents").slideUp();
+                    $(".YouTubeContents").slideUp();
+                } else {
+                    $(".shoppingContents").slideUp();
+                }
+            })
 
-        $('.nav_menu4').click(function() {
-            if($(".YouTubeContents").css("display") == "none") {
-                $(".YouTubeContents").slideDown();
-                $(".newsContents").slideUp();
-                $(".weatherContents").slideUp();
-                $(".shoppingContents").slideUp();
-            } else {
-                $(".YouTubeContents").slideUp();
-            }
+            $('.nav_menu4').click(function() {
+                if($(".YouTubeContents").css("display") == "none") {
+                    $(".YouTubeContents").slideDown();
+                    $(".newsContents").slideUp();
+                    $(".weatherContents").slideUp();
+                    $(".shoppingContents").slideUp();
+                } else {
+                    $(".YouTubeContents").slideUp();
+                }
+            })
         })
-    })
-</script> 
+    </script> 
  </head>
  
  <body>

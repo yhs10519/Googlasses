@@ -1,13 +1,11 @@
 <!-- 
-    [ 메인 홈페이지 ]
+    [ 메인 홈페이지 ] - 큰 글씨 버전
 
     작성자 : 김정민
 
-    한글 카드뉴스 콘텐츠(뉴스, 쇼핑, 유투브) 추가 : 김현재, 양현식
+    카드뉴스 콘텐츠(뉴스, 쇼핑, 유투브) 추가 : 김현재, 양현식
 
-    한글 카드뉴스 콘텐츠(날씨) 추가 : 김정민
-
-    영어 카드뉴스 콘텐츠 추가 : 루스탐
+    카드뉴스 콘텐츠(날씨) 추가 : 김정민
  -->
 
  <!DOCTYPE html>
@@ -25,9 +23,21 @@
      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
      <!-- 이하 카드 뉴스 관련  -->
      <style>
-         :root {
-             --swiper-theme-color: #9b4747;
-         }
+        html {
+            --red-yellow-change: #9b4747;
+        }
+
+        html[data-theme="dark"] {
+            --red-yellow-change: #F2DD68;
+        }
+  
+        html[data-theme="light"] {
+            --red-yellow-change: #9b4747;
+        }
+
+        :root {
+             --swiper-theme-color: var(--red-yellow-change);
+        }
      </style>
  
      <script>
@@ -83,9 +93,10 @@
      <!-- 헤더 (다크모드, 로그인) -->
      <header class="header">
          <a href="./SignIn.html" class="logInTxt" target="_self">LogIn</a>
-         <a href="#" class="darkmodeBtn">
-             <i class="far fa-moon"></i>
-         </a>
+         <input type="checkbox" id="darkmode_toggle" />
+         <label for="darkmode_toggle" class="darkmodeBtn">
+            <i class="far fa-moon"></i>
+         </label>
          <!-- 로고 -->
          <div class="logo">
              <p><a href="./main.html" class="logo_btn">Googlasses</a></p>
@@ -104,7 +115,6 @@
                  <li><button class="nav_menu5" onclick="showPopup(3)">3</button></li>
              </div>
              <ul class="navbar_icons">
-                 <li><a href="#"><i class="fas fa-plus fa-lg"></i></a></li>
                  <li><a href="#"><i class="fas fa-edit fa-lg"></i></a></li>
              </ul>
              <a href="#" class="navbar_toggleBtn">
@@ -699,7 +709,7 @@
          <!-- footer 부분 -->
          <footer>
              <nav>
-                 <a href="https://github.com/j-miiin/Googlasses" target="_blank" style="color: #848484;">GitHub</a>
+                 <a href="https://github.com/j-miiin/Googlasses" target="_blank">GitHub</a>
              </nav>
              <p>
                  <span>저자 : Googlasses</span><br>

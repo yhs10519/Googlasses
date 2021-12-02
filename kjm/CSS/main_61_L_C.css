@@ -1,5 +1,5 @@
 /* 
-    [ 메인 홈페이지 ] - 큰 글씨 버전
+    [ 메인 홈페이지 ] - 큰 글씨, 색상 변형 버전
 
     작성자 : 김정민
 
@@ -12,38 +12,20 @@
 
 html {
     --bg-color-change: white;
-    --red-yellow-change: #9b4747;
-    --red-y-change: #9b4747;
-    --y-yellow-change: #f6e8db;
-    --y-y-change: #f6e8db;
-    --red-black-change: #9b4747;
+    --yellow-black-change: #f0e442;
     --black-yellow-change: black;
-    --grey-y-change: #848484;
-    --none-y-change: none;
 }
 
 html[data-theme="dark"] {
     --bg-color-change: #262626;
-    --red-yellow-change: #F2DD68;
-    --red-y-change: #F1ECD3;
-    --y-yellow-change: #F2DD68;
-    --y-y-change: #F1ECD3;
-    --red-black-change: #262626;
-    --black-yellow-change: #F2DD68;
-    --grey-y-change: #F1ECD3;
-    --none-y-change: #F1ECD3;
+    --yellow-black-change: black;
+    --black-yellow-change: #f0e442;
 }
   
 html[data-theme="light"] {
     --bg-color-change: white;
-    --red-yellow-change: #9b4747;
-    --red-y-change: #9b4747;
-    --y-yellow-change: #f6e8db;
-    --y-y-change: #f6e8db;
-    --red-black-change: #9b4747;
+    --yellow-black-change: #f0e442;
     --black-yellow-change: black;
-    --grey-y-change: #848484;
-    --none-y-change: none;
 }
 
 html {
@@ -61,7 +43,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
 }
 
 .header {
@@ -73,12 +55,12 @@ a {
     font-size: 25px;
     float: right;
     margin-right: 30px;
-    color: var(--grey-y-change);
+    color: var(--black-yellow-change);
 }
 
 .darkmodeBtn {
     float: left;
-    color: var(--red-yellow-change);
+    color: var(--black-yellow-change);
     font-size: 35px;
     margin-left: 30px;
 }
@@ -99,18 +81,16 @@ a {
     box-sizing: border-box;
     font-size: 60px;
     font-weight: bold;
-    color: var(--red-yellow-change);
+    color: var(--black-yellow-change);
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--red-black-change);
+    background-color: var(--black-yellow-change);
     padding: 8px 12px;
     height: 60px;
-    border-top: 1px solid var(--none-y-change);
-    border-bottom: 1px solid var(--none-y-change);
 }
 
 .navbar_menu {
@@ -127,7 +107,7 @@ a {
 
 .navbar_menu button {
     font-size: 28px;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
     background: none;
     border: none;
     cursor: pointer;
@@ -142,7 +122,7 @@ a {
     transform: translate(-50%);
     width: 0;
     height: 4px;
-    background: var(--y-yellow-change);
+    background: var(--yellow-black-change);
     transition: all .3s ease-out;
 }
 
@@ -153,7 +133,7 @@ a {
 
 .navbar_icons {
     list-style: none;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
     display: flex;
     padding-left: 0;
     margin-top: 18px;
@@ -169,8 +149,8 @@ a {
     display: none;
     position: absolute;
     right: 32px;
-    font-size: 24px;
-    color: var(--y-yellow-change);
+    font-size: 34px;
+    color: var(--yellow-black-change);
     padding-top: 5px;
 }
 
@@ -211,14 +191,14 @@ a {
       background: none;
       border: none;
       font-size: 36px;
-      color: var(--red-yellow-change);
+      color: var(--black-yellow-change);
       cursor: pointer;
   }
 
   .mapTitle {
-      font-size: 30px;
-      color: var(--red-yellow-change);
+    color: var(--black-yellow-change);
       font-weight: bold;
+      font-size: 30px;
   }
 
 .search_box {
@@ -226,7 +206,7 @@ a {
     margin-top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--y-y-change);
+    background: var(--black-yellow-change);
     height: 60px;
     border-radius: 40px;
     padding: 10px;
@@ -244,22 +224,26 @@ a {
     outline: none;
     float: left;
     padding: 0;
-    color: #404040;
+    color: var(--yellow-black-change);
     font-size: 26px;
     transition: 0.4s;
     line-height: 40px;
     width: 400px;
 }
 
+.search_txt::placeholder {
+    color: var(--yellow-black-change);
+}
+
 .search_btn {
     position: inherit;
     right: 10px;
     bottom: 8px;
-    color: var(--red-yellow-change);
+    color: var(--black-yellow-change);
     float: right;
     width: 43px;
     height: 43px;
-    border: var(--red-yellow-change) 2px;
+    border: var(--black-yellow-change) 2px;
     border-radius: 50%;
     background: var(--bg-color-change);
     display: flex;
@@ -288,7 +272,7 @@ input[id="menuicon"] + label span {
     width: 100%;
     height: 5px;
     border-radius: 30px;
-    background: var(--red-yellow-change);
+    background: var(--black-yellow-change);
     transition: all .35s;
 }
 
@@ -331,13 +315,12 @@ input[id="menuicon"]:checked + label {
 .todolist{
     width: 300px;
     height: 50%;
-    background: var(--red-black-change);
+    background: var(--black-yellow-change);
     position: fixed;
     top: 40%;
     left: -300px;
     z-index: 1;
     transition: all .35s;
-    border: 1px solid var(--none-y-change);
 }
 
 .todotemplate {
@@ -351,10 +334,10 @@ input[id="menuicon"]:checked + label {
 }
 
 .todoHead {
-    border-bottom: 1px solid var(--y-yellow-change);
+    border-bottom: 1px solid var(--yellow-black-change);
     margin: 10px;
     text-align: center;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
 }
 
 .todoDay {
@@ -365,7 +348,7 @@ input[id="menuicon"]:checked + label {
 .todoTitle {
     font-size: 25px;
     font-weight: bold;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
 }
 
 form {
@@ -373,7 +356,7 @@ form {
 }
 
 .inputTodoItem {
-    caret-color: var(--red-black-change);
+    caret-color: var(--yellow-black-change);
     border-radius: 24px;
     border: none;
     margin-left: 20px;
@@ -391,7 +374,7 @@ form {
 }
 
 .todoContents::-webkit-scrollbar-thumb {
-    background: var(--y-yellow-change);
+    background: var(--yellow-black-change);
 }
 
 .todoItemList ul {
@@ -403,7 +386,7 @@ form {
     cursor: pointer;
     position: relative;
     list-style: none;
-    color: var(--y-yellow-change);
+    color: var(--yellow-black-change);
     transition: 0.3s;
     margin-left: 20px;
     font-size: 25px;
@@ -411,8 +394,8 @@ form {
 }
 
 .todoItemList ul li:hover {
-    background: var(--y-yellow-change);
-    color: var(--red-black-change);
+    background: var(--yellow-black-change);
+    color: var(--black-yellow-change);
 }
 
 .todoItemList ul li.checked {
@@ -420,7 +403,7 @@ form {
 }
 
 .todoInputBtn {
-    background: var(--y-yellow-change);
+    background: var(--yellow-black-change);
     cursor: pointer;
     width: 35px;
     height: 35px;
@@ -428,14 +411,13 @@ form {
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: var(--red-black-change);
+    color: var(--black-yellow-change);
     border-radius: 40px;
     border: none;
     outline: none;
 }
 
 .close {
-    color: var(--none-y-change);
     position: absolute;
     right: 20px;
     top: 3px;
@@ -571,27 +553,27 @@ table {
 }
 
 .card-header1 {
-    background-image: url("https://thumb.mt.co.kr/06/2021/11/2021112323351310110_1.jpg/dims/optimize/");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124110329_O2.jpg");
 }
 
 .card-header2 {
-    background-image: url("https://mimg.segye.com/content/image/2021/11/24/20211124519125.jpg");
+    background-image: url("https://img.etoday.co.kr/pto_db/2021/11/600/20211124133709_1690055_1200_900.jpg");
 }
 
 .card-header3 {
-    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124132042_O2.jpg");
+    background-image: url("https://dimg.donga.com/wps/NEWS/IMAGE/2021/11/25/110464628.1.jpg");
 }
 
 .card-header4 {
-    background-image: url("https://image.newsis.com/2021/11/24/NISI20211124_0018188713_web.jpg?rnd=20211124164143");
+    background-image: url("https://img.seoul.co.kr/img/upload/2021/11/24/SSI_20211124162201_O2.jpg");
 }
 
 .shopping-card-header1{
-    background-image: url("https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/4768920761782797-10271d33-68a2-445c-81b3-9b573b395a7e.jpg")
+    background-image: url("https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/aac9/a866638408552dd3c0569b1ebbd9b44c394d4c62a46bd3859cdc4af533de.jpg")
 }
 
 .shopping-card-header2{
-    background-image: url("https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/2019/11/21/12/8/87ebd5a0-ed61-4787-b2fd-a05af1ba98eb.jpg")
+    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/03b7/3a96336452baaf291a4f331c9709ae264c648b45661282c0a1443c69524b.jpg")
 }
 
 .shopping-card-header3{
@@ -599,7 +581,7 @@ table {
 }
 
 .shopping-card-header4{
-    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/121943323333314-62b434a2-8043-45c0-9cf6-01a0a84a6b40.jpg")
+    background-image: url("https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/699c/094cac2fe9ccbba8fd02b7537e59c5af1d4c88aac66c1842e68ec3304577.jpg")
 }
 
 .card:hover .card-header1,
@@ -629,14 +611,14 @@ h1 {
 }
 
 .card-body-hashtag {
-    color: var(--red-y-change);
+    color: var(--black-yellow-change);
     font-size: 20px;
 }
 
 .card-body-description {
     font-size: 25px;
     opacity: 0;
-    color: var(--grey-y-change);
+    color: var(--black-yellow-change);
     line-height: 28px;
     -webkit-transition: .2s ease-in-out; /*사파리&크롬*/
     -moz-transition: .2s ease-in-out; /*파이어폭스*/
@@ -653,7 +635,7 @@ h1 {
 }
 
 .card:hover .card-body-description::-webkit-scrollbar-thumb {
-    background: var(--red-yellow-change);
+    background: var(--black-yellow-change);
 }
 
 .card:hover .card-body-description {
@@ -674,7 +656,7 @@ h1 {
     bottom: 0;
     width: 100%;
     font-size: 14px;
-    color: var(--grey-y-change);
+    color: var(--black-yellow-change);
     padding: 0 15px;
 }
 
@@ -699,11 +681,11 @@ footer {
     /* margin-top: 300px; */
     text-align: center;
     font-size: 5px;
-    color: var(--grey-y-change);
+    color: var(--black-yellow-change);
 }
 
 footer nav a {
-    color: var(--grey-y-change);
+    color: var(--black-yellow-change);
 }
 
 @media screen and (max-width: 768px) {

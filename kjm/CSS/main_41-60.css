@@ -2,9 +2,53 @@
     [ 메인 홈페이지 ]
 
     작성자 : 김정민
+
+    카드뉴스 콘텐츠(뉴스, 쇼핑, 유투브) 추가 : 김현재, 양현식
+
+    카드뉴스 콘텐츠(날씨) 추가 : 김정민
 */
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+html {
+    --bg-color-change: white;
+    --red-yellow-change: #9b4747;
+    --red-y-change: #9b4747;
+    --y-yellow-change: #f6e8db;
+    --y-y-change: #f6e8db;
+    --red-black-change: #9b4747;
+    --black-yellow-change: black;
+    --grey-y-change: #848484;
+    --none-y-change: none;
+}
+
+html[data-theme="dark"] {
+    --bg-color-change: #262626;
+    --red-yellow-change: #F2DD68;
+    --red-y-change: #F1ECD3;
+    --y-yellow-change: #F2DD68;
+    --y-y-change: #F1ECD3;
+    --red-black-change: #262626;
+    --black-yellow-change: #F2DD68;
+    --grey-y-change: #F1ECD3;
+    --none-y-change: #F1ECD3;
+}
+  
+html[data-theme="light"] {
+    --bg-color-change: white;
+    --red-yellow-change: #9b4747;
+    --red-y-change: #9b4747;
+    --y-yellow-change: #f6e8db;
+    --y-y-change: #f6e8db;
+    --red-black-change: #9b4747;
+    --black-yellow-change: black;
+    --grey-y-change: #848484;
+    --none-y-change: none;
+}
+
+html {
+    background-color: var(--bg-color-change);
+}
 
 * {
     box-sizing: border-box;
@@ -17,7 +61,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
 }
 
 .header {
@@ -28,14 +72,18 @@ a {
 .logInTxt {
     float: right;
     margin-right: 30px;
-    color: #404040;
+    color: var(--grey-y-change);
 }
 
 .darkmodeBtn {
     float: left;
-    color: #9b4747;
+    color: var(--red-yellow-change);
     font-size: 25px;
     margin-left: 30px;
+}
+
+#darkmode_toggle {
+    display: none;
 }
 
 .logo {
@@ -50,16 +98,18 @@ a {
     box-sizing: border-box;
     font-size: 50px;
     font-weight: bold;
-    color: #9b4747;
+    color: var(--red-yellow-change);
 }
 
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #9b4747;
+    background-color: var(--red-black-change);
     padding: 8px 12px;
     height: 50px;
+    border-top: 1px solid var(--none-y-change);
+    border-bottom: 1px solid var(--none-y-change);
 }
 
 .navbar_menu {
@@ -76,7 +126,7 @@ a {
 
 .navbar_menu button {
     font-size: 18px;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
     background: none;
     border: none;
     cursor: pointer;
@@ -91,7 +141,7 @@ a {
     transform: translate(-50%);
     width: 0;
     height: 4px;
-    background: #f6e8db;
+    background: var(--y-yellow-change);
     transition: all .3s ease-out;
 }
 
@@ -102,7 +152,7 @@ a {
 
 .navbar_icons {
     list-style: none;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
     display: flex;
     padding-left: 0;
     margin-top: 18px;
@@ -118,7 +168,7 @@ a {
     position: absolute;
     right: 32px;
     font-size: 24px;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
     padding-top: 5px;
 }
 
@@ -149,7 +199,7 @@ a {
   #popup2 .content,
   #popup3 .content {
     padding: 20px;
-    background: #fff;
+    background: var(--bg-color-change);
     border-radius: 5px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
   }
@@ -159,12 +209,12 @@ a {
       background: none;
       border: none;
       font-size: 26px;
-      color: #9b4747;
+      color: var(--red-yellow-change);
       cursor: pointer;
   }
 
   .mapTitle {
-      color: #9b4747;
+    color: var(--red-yellow-change);
       font-weight: bold;
   }
 
@@ -173,7 +223,7 @@ a {
     margin-top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #f6e8db;
+    background: var(--y-y-change);
     height: 60px;
     border-radius: 40px;
     padding: 10px;
@@ -202,13 +252,13 @@ a {
     position: inherit;
     right: 10px;
     bottom: 8px;
-    color: #9b4747;
+    color: var(--red-yellow-change);
     float: right;
     width: 43px;
     height: 43px;
-    border: #9b4747 2px;
+    border: var(--red-yellow-change) 2px;
     border-radius: 50%;
-    background: white;
+    background: var(--bg-color-change);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +285,7 @@ input[id="menuicon"] + label span {
     width: 80%;
     height: 5px;
     border-radius: 30px;
-    background: #9b4747;
+    background: var(--red-yellow-change);
     transition: all .35s;
 }
 
@@ -278,12 +328,13 @@ input[id="menuicon"]:checked + label {
 .todolist{
     width: 300px;
     height: 50%;
-    background: #9b4747;
+    background: var(--red-black-change);
     position: fixed;
     top: 40%;
     left: -300px;
     z-index: 1;
     transition: all .35s;
+    border: 1px solid var(--none-y-change);
 }
 
 .todotemplate {
@@ -297,10 +348,10 @@ input[id="menuicon"]:checked + label {
 }
 
 .todoHead {
-    border-bottom: 1px solid #f6e8db;
+    border-bottom: 1px solid var(--y-yellow-change);
     margin: 10px;
     text-align: center;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
 }
 
 .todoDay {
@@ -311,7 +362,7 @@ input[id="menuicon"]:checked + label {
 .todoTitle {
     font-size: 20px;
     font-weight: bold;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
 }
 
 form {
@@ -319,7 +370,7 @@ form {
 }
 
 .inputTodoItem {
-    caret-color: #9b4747;
+    caret-color: var(--red-black-change);
     border-radius: 24px;
     border: none;
     margin-left: 20px;
@@ -337,7 +388,7 @@ form {
 }
 
 .todoContents::-webkit-scrollbar-thumb {
-    background: #f6e8db;
+    background: var(--y-yellow-change);
 }
 
 .todoItemList ul {
@@ -349,7 +400,7 @@ form {
     cursor: pointer;
     position: relative;
     list-style: none;
-    color: #f6e8db;
+    color: var(--y-yellow-change);
     transition: 0.3s;
     margin-left: 20px;
     font-size: 18px;
@@ -357,8 +408,8 @@ form {
 }
 
 .todoItemList ul li:hover {
-    background: #f6e8db;
-    color: #9b4747;
+    background: var(--y-yellow-change);
+    color: var(--red-black-change);
 }
 
 .todoItemList ul li.checked {
@@ -366,7 +417,7 @@ form {
 }
 
 .todoInputBtn {
-    background: #f6e8db;
+    background: var(--y-yellow-change);
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -374,13 +425,14 @@ form {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #9b4747;
+    color: var(--red-black-change);
     border-radius: 40px;
     border: none;
     outline: none;
 }
 
 .close {
+    color: var(--none-y-change);
     position: absolute;
     right: 20px;
     top: 3px;
@@ -433,7 +485,7 @@ section {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: var(--bg-color-change);
     box-shadow: 0px 2px 10px 0px #848484;
     opacity: 0;
 }
@@ -564,7 +616,7 @@ table {
 h1 {
     font-size: 22px;
     font-weight: bold;
-    color: black;
+    color: var(--black-yellow-change);
 }
 
 
@@ -574,13 +626,13 @@ h1 {
 }
 
 .card-body-hashtag {
-    color: #9b4747;
+    color: var(--red-y-change);
     font-size: 15px;
 }
 
 .card-body-description {
     opacity: 0;
-    color: #757B82;
+    color: var(--grey-y-change);
     line-height: 25px;
     -webkit-transition: .2s ease-in-out; /*사파리&크롬*/
     -moz-transition: .2s ease-in-out; /*파이어폭스*/
@@ -590,6 +642,14 @@ h1 {
     overflow: hidden;
     height: 180px;
     margin: 5px 20px;
+}
+
+.card:hover .card-body-description::-webkit-scrollbar {
+    width: 5px;
+}
+
+.card:hover .card-body-description::-webkit-scrollbar-thumb {
+    background: var(--red-yellow-change);
 }
 
 .card:hover .card-body-description {
@@ -610,7 +670,7 @@ h1 {
     bottom: 0;
     width: 100%;
     font-size: 14px;
-    color: #9FA5A8;
+    color: var(--grey-y-change);
     padding: 0 15px;
 }
 
@@ -635,7 +695,11 @@ footer {
     /* margin-top: 300px; */
     text-align: center;
     font-size: 5px;
-    color: #848484;
+    color: var(--grey-y-change);
+}
+
+footer nav a {
+    color: var(--grey-y-change);
 }
 
 @media screen and (max-width: 768px) {
